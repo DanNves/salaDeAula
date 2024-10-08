@@ -63,14 +63,15 @@ public class Executora {
 
         //Pedindo ao usuário para settar os dados da turma
         Laboratorio lb2 = new Laboratorio();
-        System.out.println("Informe o nome do Laboratorio: ");
+        System.out.print("Informe o nome do Laboratorio: ");
         lb2.setNome(sc.nextLine());
-        System.out.println("Informe a capacidade do Laboratorio: ");
+        System.out.print("Informe a capacidade do Laboratorio: ");
         lb2.setCapacidade(sc.nextInt());
 
         Disciplina d2 = new Disciplina();
         System.out.println("Informe o nome do Disciplina: ");
         d2.setNome(sc.nextLine());
+        sc.nextLine();
         System.out.println("Informe o código da Disciplina: ");
         d2.setCodigo(sc.nextLine());
         System.out.println("Informe a carga horária da Disciplina: ");
@@ -79,6 +80,7 @@ public class Executora {
         Curso c2 = new Curso();
         System.out.println("Informe o nome do Curso: ");
         c2.setNome(sc.nextLine());
+        sc.nextLine();
         System.out.println("Informe o código do Curso: ");
         c2.setCodigo(sc.nextLine());
         System.out.println("Informe a duração do Curso: ");
@@ -87,6 +89,7 @@ public class Executora {
         Computador pc2 = new Computador();
         System.out.println("Informe o modelo do Computador: ");
         pc2.setModelo(sc.nextLine());
+        sc.nextLine();
         System.out.println("Informe o processador do Computador: ");
         pc2.setProcessador(sc.nextLine());
         System.out.println("Informe a capacidade da MemóriaRAM: ");
@@ -106,6 +109,8 @@ public class Executora {
         }
 
         Turma t2 = new Turma(lb2,d2,c2,pc2,prof2,alunos);
+
+        sc.close();
     }
 }
 
